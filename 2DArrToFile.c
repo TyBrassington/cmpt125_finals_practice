@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-int main(){
+/*int main(){
     //N = rows, M = cols
     int N, M;
     int seed = 1234;
@@ -10,7 +10,7 @@ int main(){
     printf("Enter the number of columns: ");
     scanf("%d", &M);
     int **arr=(int **)malloc(N * sizeof(int *));
-    for(int i = 0; i < rows; i++){
+    for(int i = 0; i < N; i++){
         arr[i] = (int*)malloc(M * sizeof(int));
     }
     srand(seed);
@@ -29,10 +29,19 @@ int main(){
 
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < M; j++) {
-            fprintf(fp,"%c ",arr[i][j]);
+            fprintf(fp,"%d ",arr[i][j]);
         }
         fprintf(fp, "\n");
     }
     fclose(fp);
     free(fp);
-}
+
+    for (int i = 0; i < N; i++) {
+        free(arr[i]);
+        arr[i] = NULL;
+    }
+    free(arr);
+    arr = NULL;
+
+    return 0;
+}*/
