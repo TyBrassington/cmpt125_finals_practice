@@ -10,4 +10,7 @@ add_executable(finals_practice EmployeeQ.c
         Stack.h
         QuickSort.c
         reverseArray.c
-        MedianOfLinkedList.c)
+        MedianOfLinkedList.c
+        Queue.cpp
+        Queue.h
+        recursiveBinarySearch.c)
